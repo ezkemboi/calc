@@ -28,7 +28,7 @@ export default class App extends Component {
       try {
         let fixedOperation = display.split("×").join("*");
         fixedOperation = fixedOperation.split("÷").join("/");
-        fixedOperation = fixedOperation.split(",").join(".");
+        fixedOperation = fixedOperation.split(".").join(".");
 
         result = new String(eval(fixedOperation)).toString();
       } catch (e) {}
